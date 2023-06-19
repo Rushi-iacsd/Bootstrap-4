@@ -1,0 +1,49 @@
+
+.mainSlider{
+    .carousel-item {
+        height: 450px;
+        img  {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel-caption{
+    top: 25%;
+    bottom: auto;
+
+    p{
+        text-shadow: 0 3px 9px $color-dark;
+    }
+}
+
+#home-heading {
+//     background-image: url("../images/images/lights.jpg");
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//    position: relative;
+
+  @include stickyBgImg("../images/images/lights.jpg")
+
+}
+
+#home-video{
+    @include stickyBgImg("../images/images/media.jpg");
+
+}
+
+
+#home-heading, #home-video{
+
+    &::before{
+        content: "";  // tyna ele create hoto content
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+       background-color: rgba($color-dark, .7);
+    }
+}

@@ -1,0 +1,25 @@
+
+.aboutSlider {
+    .item {
+        > p:nth-child(1){
+            margin: 0 !important;
+        }
+    }
+
+     .owl-nav {
+        margin-top: 10px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+  .owl-prev {
+        transform: translateX(-30px);
+    }
+  .owl-next {
+        transform: translateX(30px);
+    }
+}

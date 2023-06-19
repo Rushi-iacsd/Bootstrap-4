@@ -1,0 +1,33 @@
+
+.navbar-brand{
+    width: 120px;
+    display: inline-block;
+    & > img {  //.navbar-brand img
+width: 100%;
+}
+}
+
+
+.myNavbar{
+    .nav-item{
+        .nav-link{     //sass ka likhna
+            text-transform: uppercase;
+        }
+
+       &.active{  //.mynavbar .nav-item.active
+        border-bottom: 2px solid $color-primary;
+       }
+    }
+}
+
+
+
+
+
+
+
+//  .nav-item .nav-link{      //css ka likhna
+//     text-transform: uppercase;
+// }
+
+
