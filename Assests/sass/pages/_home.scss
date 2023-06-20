@@ -47,3 +47,11 @@
        background-color: rgba($color-dark, .7);
     }
 }
+
+
+
+@media all and (max-width : 600px) {
+    .submitBtn{
+        width: 100%;
+    }
+}

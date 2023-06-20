@@ -12,8 +12,8 @@ $('.aboutSlider').owlCarousel({
     responsive:{
         0:{
             items:1,
-             dots:false,
-             nav:false
+             dots:true,
+             nav:true
          
         },
         600:{

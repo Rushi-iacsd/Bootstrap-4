@@ -13,6 +13,17 @@
   border-bottom: 2px solid orange;
 }
 
+.photoGallery a {
+  display: block;
+  height: 250px;
+}
+.photoGallery a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .mainSlider .carousel-item {
   height: 450px;
 }
@@ -56,6 +67,11 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media all and (max-width: 600px) {
+  .submitBtn {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #000;
 }
